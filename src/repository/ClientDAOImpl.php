@@ -2,7 +2,7 @@
 
 namespace App\Repository;
 use App\Entity\Client;
-use App\Repository\ClientDAO;
+use App\Repository\interfaces\ClientDAO;
 use Doctrine\Common\Collections\Collection;
 
 class ClientDAOImpl implements ClientDAO
