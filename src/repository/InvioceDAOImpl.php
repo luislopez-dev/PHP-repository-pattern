@@ -1,10 +1,13 @@
 <?php
 
-use App\Repository\UserDAO;
+namespace App\Repository;
 
-class UserDAOImpl implements UserDAO
+use App\Entity\Invoice;
+use Doctrine\Common\Collections\Collection;
+
+class InvioceDAOImpl implements InvoiceDAO
 {
-    public function saveOrUpdate(\App\Entity\User $user): void
+    public function saveOrUpdate(Invoice $invoice): void
     {
         // TODO: Implement saveOrUpdate() method.
     }
@@ -14,12 +17,12 @@ class UserDAOImpl implements UserDAO
         // TODO: Implement delete() method.
     }
 
-    public function findById(int $id): \App\Entity\User
+    public function findById(int $id): Invoice
     {
         // TODO: Implement findById() method.
     }
 
-    public function findAll(): \Doctrine\Common\Collections\Collection
+    public function findAll(): Collection
     {
         // TODO: Implement findAll() method.
     }

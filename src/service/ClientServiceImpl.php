@@ -36,5 +36,4 @@ class ClientServiceImpl implements ClientService
     {
         return $this->clientDAO->findAll();
     }
-
 }
